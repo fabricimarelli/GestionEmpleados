@@ -45,6 +45,7 @@ namespace AdminEmpleados.PL
             // 
             this.txtID.Location = new System.Drawing.Point(20, 43);
             this.txtID.Name = "txtID";
+            this.txtID.ReadOnly = true;
             this.txtID.Size = new System.Drawing.Size(128, 20);
             this.txtID.TabIndex = 0;
             // 
@@ -59,6 +60,8 @@ namespace AdminEmpleados.PL
             // 
             // dgvDepartamentos
             // 
+            this.dgvDepartamentos.AllowUserToAddRows = false;
+            this.dgvDepartamentos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvDepartamentos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDepartamentos.Location = new System.Drawing.Point(20, 112);
             this.dgvDepartamentos.Name = "dgvDepartamentos";
@@ -108,6 +111,7 @@ namespace AdminEmpleados.PL
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // label2
             // 
