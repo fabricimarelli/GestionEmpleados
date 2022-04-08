@@ -49,6 +49,7 @@
     <Compile Include="BLL\DepartamentoBLL.cs" />
     <Compile Include="BLL\EmpleadoBLL.cs" />
     <Compile Include="DAL\ConexionDAL.cs" />
+    <Compile Include="DAL\DepartamentosDAL.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +87,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -100,6 +102,29 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\1564503_add_business_edit_editor_new_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\103863_disk_floppy_guardar_save_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\299045_sign_error_icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\353430_checkbox_pen_edit_pencil_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2303132_arrow_back_direction_left_navigation_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2931166_arrow_back_undo_left_navigation_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8396413_id_card_identity_name_identification_icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8725775_edit_icon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

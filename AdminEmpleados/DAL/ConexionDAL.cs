@@ -17,11 +17,13 @@ namespace AdminEmpleados.DAL
             this.Conexion = new SqlConnection(this.CadenaConexion);//instancia asignada al objeto conexion
             return this.Conexion; 
         }
-        public bool PruebaConectar(string strComando)//metodo de la clase conexionDAL que me indica el resultado de la conexion
+        
+        /*Metodo INSERT, DELETE, UPDATE*/
+        public bool ejecutarComandoSinRetornoDatos(string strComando)//metodo de la clase conexionDAL que me indica el resultado de la conexion
         {
             try {
                 SqlCommand Comando = new SqlCommand();
-                Comando.CommandText = strComando; //"insert Departamentos (departamento) values ('programacion')";
+                Comando.CommandText = strComando; 
                 Comando.Connection = this.EstablecerConexion();
                 Conexion.Open();
                 Comando.ExecuteNonQuery();
@@ -31,6 +33,48 @@ namespace AdminEmpleados.DAL
             }
             catch {
                 return false; 
+            }
+        }
+        //Sobrecarga
+        public bool ejecutarComandoSinRetornoDatos(SqlCommand SQLComando)//sobrecarga porque tiene el mismo nombre que el metodo anterior y le pasamos otro argumento
+        {
+            try
+            {
+                SqlCommand Comando = SQLComando;
+                Comando.Connection = this.EstablecerConexion();
+                Conexion.Open();
+                Comando.ExecuteNonQuery();
+                Conexion.Close();
+
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+
+        /*SELECT (retorno de datos)*/
+        public DataSet EjecutarSentencia(SqlCommand sqlComando)//metodo para ejecutar sentencias tipo select
+        {
+            DataSet DS = new DataSet();//DS para adpatar la informacion
+            SqlDataAdapter Adaptador = new SqlDataAdapter();
+
+            try
+            {
+                SqlCommand Comando = new SqlCommand();
+                Comando = sqlComando;
+                Comando.Connection = EstablecerConexion();
+                Adaptador.SelectCommand = Comando;//utilizo el comando
+                Conexion.Open();//abro la conexion
+                Adaptador.Fill(DS);//lleno el adaptador
+                Conexion.Close();
+                return DS;
+            }
+            catch
+            {
+                return DS;
             }
         }
     }
