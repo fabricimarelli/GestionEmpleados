@@ -1,5 +1,4 @@
-Capas del proyecto:
+SISTEMA DE GESTION DE EMPLEADOS SIMPLE
 
-BLL: Buisness logic layer = Capa MODELO
-DAL: Data access layer = Capa CONTEXTO
-PL: Presentation layer = capa VISTA
+Proyecto personal para el desarrollo de un sistema que permita la gestion de empleados
+de una empresa persistiendo los datos en una base de datos sql server
