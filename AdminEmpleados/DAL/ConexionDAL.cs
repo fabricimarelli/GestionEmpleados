@@ -11,22 +11,24 @@ namespace AdminEmpleados.DAL
     class ConexionDAL
     {
         private string CadenaConexion = "Data Source=LENOVO-FABRIZIO\\SQLEXPRESS; Initial Catalog=dbSistemaGestionEmpleados; Integrated Security =True";
+        
         SqlConnection Conexion;
+        
         public SqlConnection EstablecerConexion()//metodo de la clase para realizar la conexion
         {
             this.Conexion = new SqlConnection(this.CadenaConexion);//instancia asignada al objeto conexion
             return this.Conexion; 
         }
         
-        /*Metodo INSERT, DELETE, UPDATE*/
-        public bool ejecutarComandoSinRetornoDatos(string strComando)//metodo de la clase conexionDAL que me indica el resultado de la conexion
+       
+        public bool ejecutarComandoSinRetornoDatos(string strComando)//metodo que le paso por parametro la sentencia SQL para la consulta
         {
             try {
                 SqlCommand Comando = new SqlCommand();
-                Comando.CommandText = strComando; 
-                Comando.Connection = this.EstablecerConexion();
+                Comando.CommandText = strComando; //le asigna a Comando la sentencia SQL guardada en la var string strComando
+                Comando.Connection = this.EstablecerConexion();//llama al metodo y establece conexion
                 Conexion.Open();
-                Comando.ExecuteNonQuery();
+                Comando.ExecuteNonQuery();//ejecuta la sentencia sql
                 Conexion.Close();
 
                 return true;
@@ -36,7 +38,7 @@ namespace AdminEmpleados.DAL
             }
         }
         //Sobrecarga
-        public bool ejecutarComandoSinRetornoDatos(SqlCommand SQLComando)//sobrecarga porque tiene el mismo nombre que el metodo anterior y le pasamos otro argumento
+        public bool ejecutarComandoSinRetornoDatos(SqlCommand SQLComando)//sobrecarga porque tiene el mismo nombre que el metodo anterior 
         {
             try
             {

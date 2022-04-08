@@ -10,3 +10,15 @@ C:\Users\Fabrizio\source\repos\AdminEmpleados\AdminEmpleados\obj\Debug\AdminEmpl
 C:\Users\Fabrizio\source\repos\AdminEmpleados\AdminEmpleados\obj\Debug\AdminEmpleados.csproj.CoreCompileInputs.cache
 C:\Users\Fabrizio\source\repos\AdminEmpleados\AdminEmpleados\obj\Debug\AdminEmpleados.exe
 C:\Users\Fabrizio\source\repos\AdminEmpleados\AdminEmpleados\obj\Debug\AdminEmpleados.pdb
+C:\Users\fabri\source\repos\GestionEmpleados\GestionEmpleados\AdminEmpleados\bin\Debug\AdminEmpleados.exe.config
+C:\Users\fabri\source\repos\GestionEmpleados\GestionEmpleados\AdminEmpleados\bin\Debug\AdminEmpleados.exe
+C:\Users\fabri\source\repos\GestionEmpleados\GestionEmpleados\AdminEmpleados\bin\Debug\AdminEmpleados.pdb
+C:\Users\fabri\source\repos\GestionEmpleados\GestionEmpleados\AdminEmpleados\obj\Debug\AdminEmpleados.csproj.AssemblyReference.cache
+C:\Users\fabri\source\repos\GestionEmpleados\GestionEmpleados\AdminEmpleados\obj\Debug\AdminEmpleados.Form1.resources
+C:\Users\fabri\source\repos\GestionEmpleados\GestionEmpleados\AdminEmpleados\obj\Debug\AdminEmpleados.PL.frmDepartamentos.resources
+C:\Users\fabri\source\repos\GestionEmpleados\GestionEmpleados\AdminEmpleados\obj\Debug\AdminEmpleados.PL.frmEmpleados.resources
+C:\Users\fabri\source\repos\GestionEmpleados\GestionEmpleados\AdminEmpleados\obj\Debug\AdminEmpleados.Properties.Resources.resources
+C:\Users\fabri\source\repos\GestionEmpleados\GestionEmpleados\AdminEmpleados\obj\Debug\AdminEmpleados.csproj.GenerateResource.cache
+C:\Users\fabri\source\repos\GestionEmpleados\GestionEmpleados\AdminEmpleados\obj\Debug\AdminEmpleados.csproj.CoreCompileInputs.cache
+C:\Users\fabri\source\repos\GestionEmpleados\GestionEmpleados\AdminEmpleados\obj\Debug\AdminEmpleados.exe
+C:\Users\fabri\source\repos\GestionEmpleados\GestionEmpleados\AdminEmpleados\obj\Debug\AdminEmpleados.pdb
